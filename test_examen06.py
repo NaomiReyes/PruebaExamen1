@@ -13,9 +13,9 @@ metrics_1 = ['mean_annual', 'volatility_annual', 'skewness', 'kurtosis']
 metrics_2 = ['skewness', 'kurtosis', 'jb_stat', 'p_value', 'is_normal']
 metrics_3 = ['mean_annual', 'volatility_annual', 'sharpe_ratio', 'var_95']
 
-#Prueba 1
-def test_1_1():
-    df_obtenido = generate_dataframe_distributions(rics_1, metrics_1)
-    df_esperado = 'unit_tests_01/df_1_1.csv'
+#Prueba 6
+def test_2_3():
+    df_obtenido = generate_dataframe_distributions(rics_2, metrics_3)
+    df_esperado = 'unit_tests_01/df_2_3.csv'
     result = pd.read_csv(df_esperado)
     assert_frame_equal(df_obtenido,result)
