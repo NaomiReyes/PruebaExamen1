@@ -19,9 +19,3 @@ def test_2_2():
     df_esperado = 'unit_tests_01/df_2_2.csv'
     result = pd.read_csv(df_esperado)
     assert_frame_equal(df_obtenido,result)
-#Prueba 5
-def test_2_2():
-    df_obtenido = generate_dataframe_distributions(rics_2, metrics_2)
-    df_esperado = 'unit_tests_01/df_2_2.csv'
-    result = pd.read_csv(df_esperado)
-    assert_frame_equal(df_obtenido,result)
